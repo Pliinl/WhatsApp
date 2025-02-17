@@ -1,0 +1,147 @@
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: rgb(30, 30, 31);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100%;
+}
+
+.img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+header {
+    padding: 2rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.navbar-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+
+.home .container {
+    position: relative;
+}
+
+.content-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 55%;
+    margin: 0px auto;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.content_big-1 {
+    font-size: clamp(1.7rem, 4vw, 5rem);
+    line-height: 1;
+}
+
+.content_big-1 h1 {
+    display: block;
+    font-style: normal;
+}
+
+.content_text-1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    line-height: 1;
+}
+
+.btn-1 {
+    font-size: clamp(1rem, 1vw, 2rem);
+    background: #f5a9a9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 35%;
+}
+
+.about .container {
+    position: relative;
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 5%;
+    margin: 0px auto;
+    position: absolute;
+    right: 55%;
+    top: 40%;
+}
+
+.content_big-2 {
+    font-size: clamp(1.7rem, 4vw, 4.5rem);
+    line-height: 1;
+}
+
+.content_big-2 h1 {
+    display: block;
+    font-style: normal;
+}
+
+.content_text-2 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    line-height: 1;
+}
+
+.btn-2 {
+    font-size: clamp(1rem, 1vw, 2rem);
+    background: #f5a9a9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 40%;
+}
