@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: rgb(30, 30, 31);
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -27,6 +27,8 @@ body {
     width: 100%;
     padding: 0 15px;
 }
+
+/* navigation Section */
 
 header {
     padding: 2rem 0;
@@ -62,86 +64,77 @@ header .container {
     text-decoration: underline;
 }
 
-.home .container {
+/* Home & About & Training & Event Section */
+
+.section_content .container {
     position: relative;
 }
 
-.content-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    left: 55%;
-    margin: 0px auto;
+.container_background img {
+    width: 100%;
+}
+
+.section_content .container .content_info {
     position: absolute;
-    right: 0;
-    top: 20%;
+    right: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 45%;
 }
 
-.content_big-1 {
-    font-size: clamp(1.7rem, 4vw, 5rem);
-    line-height: 1;
-}
-
-.content_big-1 h1 {
-    display: block;
-    font-style: normal;
-}
-
-.content_text-1 {
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    line-height: 1;
-}
-
-.btn-1 {
-    font-size: clamp(1rem, 1vw, 2rem);
-    background: #f5a9a9;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-    width: 35%;
-}
-
-.about .container {
-    position: relative;
-}
-
-.content-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.section_content.section_about .container .content_info {
     left: 5%;
-    margin: 0px auto;
-    position: absolute;
-    right: 55%;
-    top: 40%;
+    right: auto;
+    top: 50%;
 }
 
-.content_big-2 {
-    font-size: clamp(1.7rem, 4vw, 4.5rem);
-    line-height: 1;
+.content_title {
+    font-size: 75px;
+    padding-bottom: 2rem;
 }
 
-.content_big-2 h1 {
-    display: block;
-    font-style: normal;
+.content_description {
+    font-size: 25px;
+    padding-bottom: 2rem;
 }
 
-.content_text-2 {
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    line-height: 1;
-}
-
-.btn-2 {
-    font-size: clamp(1rem, 1vw, 2rem);
-    background: #f5a9a9;
-    color: white;
+.content_button {
+    font-size: 20px;
+    display: inline-block;
+    background-color: rgb(226, 197, 201);
+    text-decoration: none;
+    color: black;
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-    width: 40%;
 }
+
+/* Blog Section */
+.section_review .container {
+    display: flex;
+    justify-content: center;
+}
+
+.section_review .container .content_info {
+    margin-top: 8rem;
+    width: calc(100% / 3);
+    height: auto;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+.thumb img {
+    max-width: 20rem;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content_lable {
+    font-size: 30px;
+}
+
+.review_description {
+    font-size: 20px;
+    padding-bottom: 5rem;
+}
+
+/* Shop Section */
