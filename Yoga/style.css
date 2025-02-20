@@ -65,6 +65,10 @@ header .container {
 }
 
 /* Home & About & Training & Event Section */
+.section_content.section_home .container {
+    display: flex;
+    align-items: center;
+}
 
 .section_content .container {
     position: relative;
@@ -76,7 +80,7 @@ header .container {
 
 .section_content .container .content_info {
     position: absolute;
-    right: 5%;
+    right: 4%;
     top: 45%;
     transform: translateY(-50%);
     width: 45%;
@@ -108,24 +112,45 @@ header .container {
 }
 
 /* Blog Section */
+
 .section_review .container {
+    text-align: center;
+    padding: 2rem 0;
+    background: url(image/Background_6.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.section_review .review_wrap {
     display: flex;
     justify-content: center;
 }
 
 .section_review .container .content_info {
-    margin-top: 8rem;
+    margin-top: 2rem;
     width: calc(100% / 3);
     height: auto;
     padding: 0px 15px;
     text-align: center;
 }
 
-.thumb img {
-    max-width: 20rem;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.thumb {
+    position: relative;
+    width: 100%;
+    padding-top: 56%;
+    overflow: hidden;
+}
+
+.thumb p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content_lable {
@@ -134,7 +159,176 @@ header .container {
 
 .review_description {
     font-size: 20px;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
-/* Shop Section */
+
+/*  */
+.social_btn {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 5%;
+}
+
+.social_btn li a {
+    text-decoration: none;
+}
+
+.social_btn li a:hover {
+    opacity: .8;
+}
+
+/* Gei in Touch */
+
+.contact_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    line-height: 4;
+}
+
+.contact_name {
+    width: 50%;
+    height: auto;
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: rgb(243, 242, 241);
+    border: 2px solid rgb(230, 224, 224);
+    color: rgb(177, 170, 170);
+
+}
+
+.contact_gender {
+    width: 50%;
+    height: auto;
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: rgb(243, 242, 241);
+    border: 2px solid rgb(230, 224, 224);
+    color: rgb(177, 170, 170);
+
+}
+
+.contact_messages {
+    width: 50%;
+    height: 150px;
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: rgb(243, 242, 241);
+    border: 2px solid rgb(230, 224, 224);
+    color: rgb(177, 170, 170);
+
+}
+
+.contact_button {
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(226, 197, 201);
+    border: none;
+}
+
+.contact_button:hover {
+    opacity: 0.8;
+
+}
+
+/* Section Footer */
+footer {
+    background-color: #3b424c;
+    color: white;
+    padding: 40px 20px;
+    background: url(./image/Background_9.jpg);
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    font-size: 14px;
+    color: #b0b3b8;
+    text-decoration: none;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #b0b3b8;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-section.copyright {
+    text-align: center;
+  }
+  
+  .footer-section.copyright img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 8px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: #1e90ff;
+  }
+  
+  .footer_button {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 75%;
+}
+
+.social_btn li a {
+    text-decoration: none;
+}
+
+.social_btn li a:hover {
+    opacity: .8;
+}
